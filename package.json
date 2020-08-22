@@ -1,0 +1,25 @@
+{
+    "name": "ada-syntax-highlighting",
+    "displayName": "Ada Syntax Highlighting",
+    "description": "Syntax Highlighting for Ada",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ada",
+            "aliases": ["Ada", "ada"],
+            "extensions": [".adb",".ads"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ada",
+            "scopeName": "source.ada",
+            "path": "./syntaxes/ada.tmLanguage.json"
+        }]
+    }
+}
